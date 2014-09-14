@@ -1,0 +1,8 @@
+C:\Titles\DAL\bin\Debug\Titles.DAL.dll.config
+C:\Titles\DAL\bin\Debug\Titles.DAL.dll
+C:\Titles\DAL\bin\Debug\Titles.DAL.pdb
+C:\Titles\DAL\bin\Debug\EntityFramework.dll
+C:\Titles\DAL\bin\Debug\EntityFramework.xml
+C:\Titles\DAL\obj\Debug\Titles.DAL.dll
+C:\Titles\DAL\obj\Debug\Titles.DAL.pdb
+C:\Titles\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache

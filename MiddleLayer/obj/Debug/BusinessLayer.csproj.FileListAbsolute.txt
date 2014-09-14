@@ -1,0 +1,9 @@
+C:\Titles\MiddleLayer\bin\Debug\Titles.BusinessLayer.dll
+C:\Titles\MiddleLayer\bin\Debug\Titles.BusinessLayer.pdb
+C:\Titles\MiddleLayer\bin\Debug\Titles.DAL.dll
+C:\Titles\MiddleLayer\bin\Debug\EntityFramework.dll
+C:\Titles\MiddleLayer\bin\Debug\Titles.DAL.pdb
+C:\Titles\MiddleLayer\bin\Debug\EntityFramework.xml
+C:\Titles\MiddleLayer\obj\Debug\BusinessLayer.csprojResolveAssemblyReference.cache
+C:\Titles\MiddleLayer\obj\Debug\Titles.BusinessLayer.dll
+C:\Titles\MiddleLayer\obj\Debug\Titles.BusinessLayer.pdb

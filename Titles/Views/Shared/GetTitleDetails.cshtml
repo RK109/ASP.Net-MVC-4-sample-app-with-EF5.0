@@ -1,0 +1,48 @@
+﻿@model IEnumerable<Titles.DAL.EntityModels.TitleDetail>
+<table>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.TitleId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TitleName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.GenreName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Award)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AwardCompany)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AwardYear)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.TitleId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TitleName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.GenreName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Award)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AwardCompany)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AwardYear)
+        </td>
+    </tr>
+}
+
+</table>

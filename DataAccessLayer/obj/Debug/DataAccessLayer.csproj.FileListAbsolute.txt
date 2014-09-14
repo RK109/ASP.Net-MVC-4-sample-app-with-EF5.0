@@ -1,0 +1,6 @@
+C:\Titles\DataAccessLayer\bin\Titles.DataAccessLayer.dll
+C:\Titles\DataAccessLayer\bin\Titles.DataAccessLayer.pdb
+C:\Titles\DataAccessLayer\bin\EntityFramework.dll
+C:\Titles\DataAccessLayer\bin\EntityFramework.xml
+C:\Titles\DataAccessLayer\obj\Debug\Titles.DataAccessLayer.dll
+C:\Titles\DataAccessLayer\obj\Debug\Titles.DataAccessLayer.pdb

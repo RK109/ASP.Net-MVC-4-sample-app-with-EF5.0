@@ -1,0 +1,82 @@
+﻿@model Titles.Models.TitlesModel
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Titles Details</h2>
+
+
+@*@using (Html.BeginForm())
+{
+    @Html.ValidationSummary(true, "Account creation was unsuccessful. Please correct the errors and try again.")*@
+    <div id="divMain">
+        <div>
+            <div style="border: border-style: solid; border-color: #98bf21;">
+                <div id="divSelect">
+                    <label id="lblSearchOptionLabel">Select the search option: </label>
+                    <select id="ddlSearchOption">
+                        <option value="0">TitleName</option>
+                        <option value="1">Genre</option>
+                        <option value="2">Language</option>
+                        <option value="3">Participant</option>
+                        <option value="4">All</option>
+                    </select>
+                </div>
+                <div id = "divSearch">
+                    @using (Html.BeginForm("Index", "Titles", FormMethod.Post, new { titleModel = Model }))
+                    {
+                        @Html.ValidationSummary()
+                        <label id="lblSearchTextLabel">Enter Title Name</label>
+                        @Html.TextBoxFor(m => m.TitleName, new { id = "txtSearchText" })
+                        <input id="btnSearch" type="submit" value="Search" />
+                    }
+                </div>
+            </div>
+
+            <div id = "divTitles" style="float:left; border:1px blue; width:500px;">
+            @if (ViewBag.Titles != null)
+            {
+                <table>
+                    <tr>
+                        <th>
+                            Title Id
+                        </th>
+                        <th>
+                            Title Name
+                        </th>
+                        <th>
+                            Release Year
+                        </th>
+                    </tr>
+
+                    @foreach (var t in ViewBag.Titles)
+                    {
+                    <tr>
+                        <td>
+                            @t.TitleId
+                        </td>
+                        <td>
+                            @t.TitleName
+                        </td>
+                        <td>
+                            @t.ReleaseYear
+                        </td>
+                        <td>
+                            <div>@Ajax.ActionLink("Details", "GetTitleDetails", new { titleId = t.TitleId }, new AjaxOptions { UpdateTargetId = "divTitleDetails", InsertionMode = InsertionMode.Replace })</div>
+                        </td>
+                    </tr>
+                    }
+
+                </table>
+            }
+            </div>
+            <div style="float:left;">
+                <div id="divTitleDetails"></div>
+            </div>
+            
+        </div>
+    </div>
+
+
